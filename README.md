@@ -1,4 +1,4 @@
-# sol namor (alpha)
+# sol-namor (alpha)
 
 Generate (deterministic) human-readable names from Solana addresses.
 
