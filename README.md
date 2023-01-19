@@ -9,7 +9,7 @@ Generate (deterministic) human-readable names from Solana addresses.
 ## Usage
 
 ```
-const { getSolanaName } = require("sol-naming-ninja");
+const { getSolanaName } = require("sol-namor");
 
 const pubKey = "enter a solana public key here";
 
