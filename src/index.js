@@ -26,7 +26,4 @@ const getSolanaName = (pubkey) => {
     return uniqueNamesGenerator(config);
 }
 
-
-console.log(getSolanaName("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"))
-
 module.exports = { getSolanaName }
