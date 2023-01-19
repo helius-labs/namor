@@ -1,9 +1,8 @@
 const { uniqueNamesGenerator, adjectives, colors, animals, names } = require('unique-names-generator');
-const { PublicKey } = require("@solana/web3.js")
-
+const { PublicKey } = require("@solana/web3.js");
+const solanaNameMappings = require("./pubKeyMappings.json");
 
 const DICTIONARIES = [adjectives, colors, animals, names]
-
 
 const getSolanaName = (pubkey) => {
     try {
@@ -13,6 +12,10 @@ const getSolanaName = (pubkey) => {
     }
 
     // TODO: see if pubkey belongs to public list of well-known addresses first
+    // TODO: add some sort of domain provider integration
+    if (solanaNameMappings[pubkey] != undefined) {
+        return solanaNameMappings[pubkey];
+    }
 
     const config = {
         dictionaries: DICTIONARIES,
@@ -20,9 +23,10 @@ const getSolanaName = (pubkey) => {
         separator: " "
     }
 
-
     return uniqueNamesGenerator(config);
 }
 
 
-export { getSolanaName }
+console.log(getSolanaName("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"))
+
+module.exports = { getSolanaName }
