@@ -4,7 +4,7 @@ Generate (deterministic) human-readable names from Solana addresses.
 
 ## Install
 
-`npm i sol-naming-ninja`
+`npm i sol-namor`
 
 ## Usage
 
