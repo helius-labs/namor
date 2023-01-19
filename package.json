@@ -1,5 +1,5 @@
 {
-  "name": "namor",
+  "name": "sol-naming-ninja",
   "version": "1.0.0",
   "description": "Human readable names for Solana addresses.",
   "main": "index.js",
