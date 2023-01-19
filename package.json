@@ -1,6 +1,6 @@
 {
   "name": "sol-namor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Human readable names for Solana addresses.",
   "main": "index.js",
   "scripts": {
