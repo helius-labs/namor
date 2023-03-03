@@ -32,7 +32,6 @@
         "lint": "eslint --ext .js,.ts,.svelte src",
         "test": "npm run lint"
     },
-    "type": "module",
     "types": "dist/index.js",
     "version": "1.0.0"
 }
