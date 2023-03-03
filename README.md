@@ -14,7 +14,7 @@ This package solves that by generating fun (deterministic) human-readable names 
 
 #### `getSolanaName(string: publicKey)`
 
-The following will first attempt to lokup the provided address in our dictionary at `/src/types`, and will return a funny name bane if fails to find it.
+The following will first attempt to lookup the provided address in our dictionary at `/src/types`, if fails, a deterministic name will be generated using the public key as the seed.
 
 ```js
 import { getSolanaName } from "sol-namor";
@@ -32,4 +32,4 @@ const name = getSolanaName(pubKey);
 
 ## Support
 
-https://helius.xys
+https://helius.xyz
