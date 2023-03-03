@@ -1,0 +1,11 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "eslint.validate": ["json", "jsonc", "svelte"],
+    "prettier.requireConfig": true
+}
