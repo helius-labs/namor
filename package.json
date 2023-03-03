@@ -1,26 +1,37 @@
 {
-  "name": "sol-namor",
-  "version": "1.0.2",
-  "description": "Human readable names for Solana addresses.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/helius-labs/namor.git"
-  },
-  "keywords": [
-    "solana"
-  ],
-  "author": "Helius",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/helius-labs/namor/issues"
-  },
-  "homepage": "https://github.com/helius-labs/namor#readme",
-  "dependencies": {
-    "@solana/web3.js": "^1.73.0",
-    "unique-names-generator": "^4.7.1"
-  }
+    "author": "",
+    "dependencies": {
+        "unique-names-generator": "^4.7.1"
+    },
+    "description": "",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.54.0",
+        "@typescript-eslint/parser": "^5.54.0",
+        "eslint": "^8.35.0",
+        "eslint-config-custom": "*",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-import-resolver-typescript": "^3.5.3",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-import-newlines": "^1.3.1",
+        "eslint-plugin-padding": "^0.0.4",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-sort-keys-fix": "^1.1.2",
+        "eslint-plugin-svelte": "^2.19.2",
+        "eslint-plugin-this": "^0.2.3",
+        "eslint-plugin-write-good-comments": "^0.1.4",
+        "prettier": "^2.8.4"
+    },
+    "license": "ISC",
+    "main": "dist/index.js",
+    "name": "@helius-labs/helius-namor",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc -w",
+        "format": "prettier --write \"**/*.{ts,tsx,md,svelte}\"",
+        "lint": "eslint --ext .js,.ts,.svelte src",
+        "test": "npm run lint"
+    },
+    "types": "dist/index.js",
+    "version": "1.0.0"
 }

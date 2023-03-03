@@ -1,0 +1,66 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true,
+        "node": true
+    },
+    "extends": ["plugin:prettier/recommended", "plugin:svelte/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint/eslint-plugin",
+        "prettier",
+        "write-good-comments",
+        "import",
+        "promise",
+        "sort-keys-fix",
+        "this"
+    ],
+    "rules": {
+        "indent": ["error", 4],
+        "no-console": "error",
+
+        "no-debugger": "error",
+
+        "no-var": "error",
+
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+
+        "promise/always-return": "error",
+
+        "promise/avoid-new": "warn",
+
+        "promise/catch-or-return": "error",
+
+        "promise/no-callback-in-promise": "warn",
+
+        "promise/no-native": "off",
+
+        "promise/no-nesting": "warn",
+
+        "promise/no-new-statics": "error",
+
+        "promise/no-promise-in-callback": "warn",
+
+        "promise/no-return-in-finally": "warn",
+
+        "promise/no-return-wrap": "error",
+
+        "promise/param-names": "error",
+
+        "promise/valid-params": "warn",
+
+        "sort-keys-fix/sort-keys-fix": "warn",
+        "this/no-this": "error",
+        "write-good-comments/write-good-comments": "warn"
+    }
+}
