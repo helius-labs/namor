@@ -24,6 +24,12 @@ const pubKey = "enter a solana public key here";
 const name = getSolanaName(pubKey);
 ```
 
+## Contribute
+
+1. Fork the repo, work on your own branch, make a PR into this `main` branch when ready.
+2. We suggest using VSCode and having ESList and Prettier installed so you get automatic linting and formatting. If using other editors you can run `npm run lint` and `npm run format` to lint/format manually.
+3. GitHub will auto run some tests on your PR once you create it and they will be required to pass. To simulate locally you can `npm run build && npm test`.
+
 ## Support
 
 https://helius.xys
